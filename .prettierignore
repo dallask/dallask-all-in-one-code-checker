@@ -1,0 +1,10 @@
+# Ignore artifacts:
+.github
+.idea
+general-linter.yml
+config
+vendor
+node_modules
+build
+coverage
+./.github/workflows/**/*.yml
