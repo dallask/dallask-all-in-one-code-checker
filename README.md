@@ -10,7 +10,7 @@ Provides set of libraries to easily setup code quality checks based ESlint, Styl
 
 1. `npm install dallask-all-in-one-code-checker` The postinstall script will copy default configs and create check scripts.
 
-1. If you do not see needed scripts in the your package.json file, just copy them from file: ./node_modules/dallask-all-in-one-code-checker/package.json
+1. If you do not see needed scripts in your package.json file, just copy them from file: ./node_modules/dallask-all-in-one-code-checker/package.json
 
 ```
 "scripts": {
