@@ -19,20 +19,15 @@
   },
   "dependencies": {
     "eslint": "^7.32.0",
+    "npm-add-script": "^1.1.0",
     "prettier": "2.4.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0"
   },
   "devDependencies": {},
   "scripts": {
-    "postinstall": "cp dist/.eslintignore $INIT_CWD && cp dist/.eslintrc.json $INIT_CWD && cp dist/.prettierignore $INIT_CWD && cp dist/.prettierrc.json $INIT_CWD && cp dist/.stylelintignore $INIT_CWD && cp dist/.stylelintrc.json $INIT_CWD",
-    "test": "exit 0",
-    "stylelint": "stylelint '**/*.scss'",
-    "stylelint:fix": "stylelint '**/*.scss' --fix",
-    "prettier": "prettier '**/*' --check",
-    "prettier:fix": "prettier '**/*' --write",
-    "eslint": "eslint '**/*.js'",
-    "eslint:fix": "eslint '**/*.js' --fix"
+    "postinstall": "cp dist/.eslintignore $INIT_CWD && cp dist/.eslintrc.json $INIT_CWD && cp dist/.prettierignore $INIT_CWD && cp dist/.prettierrc.json $INIT_CWD && cp dist/.stylelintignore $INIT_CWD && cp dist/.stylelintrc.json $INIT_CWD && npx npm-add-script -k \"stylelint\" -v \"stylelint '**/*.scss'\" -f && npx npm-add-script -k \"stylelint:fix\" -v \"stylelint '**/*.scss' --fix\" -f && npx npm-add-script -k \"prettier\" -v \"prettier '**/*' --check\" -f && npx npm-add-script -k \"prettier:fix\" -v \"prettier '**/*' --write\" -f && npx npm-add-script -k \"eslint\" -v \"eslint '**/*.js'\" -f && npx npm-add-script -k \"eslint:fix\" -v \"eslint '**/*.js' --fix\" -f",
+    "test": "exit 0"
   },
   "files": [
     "dist/.eslintignore",
