@@ -12,6 +12,6 @@
       }
     ],
     "max-empty-lines": 2,
-    "unit-allowed-list": ["em", "rem", "%", "s"]
+    "unit-allowed-list": ["em", "rem", "%", "s", "px"]
   }
 }
